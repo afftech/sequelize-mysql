@@ -11,12 +11,12 @@ const sequelize = new Sequelize(
   config.db.options
 );
 
-fs.readdirSync(__dirname)
+/*fs.readdirSync(__dirname)
   .filter(file => file !== "index.js")
   .forEach(file => {
     const model = sequelize.import(path.join(__filename, file));
     db[model.name] = model;
-  });
+  });*/
 
 db.sequelize = sequelize;
 db.Sequelize = Sequelize;

@@ -27,7 +27,7 @@ export default {
         email: this.email,
         password: this.password,
       });
-      console.log(response.data);
+      console.log('Проверочка',response.data);
     },
   },
   watch: {
